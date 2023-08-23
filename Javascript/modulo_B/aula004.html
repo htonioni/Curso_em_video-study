@@ -22,9 +22,11 @@
         var s = Number(n1) + Number(n2)
         alert(s) */
         var nome = window.prompt("Digite seu nome: ")
+        var idade = prompt("Digite sua idade:")
         document.write(`Seu nome tem ${nome.length} letras <br>`) 
         document.write(`Seu nome em maiusculos: ${nome.toUpperCase()}<br>`) 
-        document.write(`Seu nome em minusculas: ${nome.toLowerCase()}`)
+        document.write(`Seu nome em minusculas: ${nome.toLowerCase()}<br>`)
+        var ehMaiorIdade = idade % 2 === 0 ? document.write("Eh maior de idade"): document.write("Eh menor de idade")
     </script>
 </body>
 </html>
