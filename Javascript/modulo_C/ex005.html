@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando com o DOM</title>
+</head>
+<body>
+    <h1>Iniciando com o DOM</h1>
+    <p>Aqui vai o <i>resultado</i></p>
+    <p>Aqui é o segundo paragrafo</p>
+    <div id="divis">Document Object Model - DOM</div>
+    <h2>A arvore do DOM:</h2>
+    <ul style="list-style-type: decimal;">
+        <li>Window
+            <ul style="list-style-type: decimal;">
+                <li>location</li>
+                <li>document
+                    <ul>
+                        <li>HTML <b>(parent)</b>
+                            <ul style="list-style-type: circle;">
+                                <li>head <b>(child)</b></li>
+                                <li>body <b>(child)</b></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>history</li>
+            </ul>
+        </li>
+    </ul>
+   
+    <script>
+        window.document.write(`<h3>Teste DOM<h3>`)
+        window.document.write(navigator.appCodeName+`<br>`)
+
+        // Selecionando o primeiro paragrafo
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write("Conteudo do 1 paragrafo: " + p1.innerText +`<br>`)
+        window.document.write(p1.innerHTML)
+        //window.document.body.style.backgroundColor = '#777777'
+        var corpo = document.body
+        corpo.style.backgroundColor = '#999999'
+        
+        var divisao = document.getElementById('divis')
+        divisao.style.backgroundColor = 'yellowgreen'
+        divisao.style.textAlign = 'center'
+        // ou                        todas <div> com #(id) divis
+        var divisao2 = document.querySelector('div#divis')
+        document.write('<br>' + divisao.innerText)
+    </script>
+</body>
+</html>
