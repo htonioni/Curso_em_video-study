@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando com o DOM</title>
+    <style>
+         body {
+            background-color: lightblue;
+        }
+        #area {
+            padding: 4em;
+            text-align: center;
+            font-family: monospace;
+            font-size: 20px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja ...
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', () => {
+            a.innerText = 'Clicado!'
+            a.style.backgroundColor = 'red'})
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+
+
+        function entrar() {
+            a.innerText = 'Ola!'
+        }
+
+        function saiu() {
+            a.innerText = 'Interaja...'
+            a.style.backgroundColor = 'yellow'
+        }
+    </script>
+</body>
+</html>
