@@ -1,0 +1,35 @@
+
+body {
+    background-color: rgb(93, 65, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    color: rgba(255, 255, 255, 0.77);
+}
+
+.container {
+    height: 50vh;
+    width: 60vh;
+    border-radius: 4em;
+    background: #ffffffb1;
+    box-shadow: rgba(0, 0, 0, 0.55) 5px 5px 10px;
+}
+
+.container div {
+    text-align: center;
+    padding: 2.3em;
+}
+
+div img{
+    width: 50%;
+    height: 19em;
+    border-radius: 80%;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+}
