@@ -29,13 +29,13 @@ function verificar() {
         } else {
             genero = 'Mulher'
             if (idade >= 0 && idade < 10) {
-                //bm
+                tagImg.setAttribute('src', 'img/bF.jpg')
             } else if (idade <= 18){
-                // jm
+                tagImg.setAttribute('src', 'img/jF.jpeg')
             } else if (idade <= 51){
-                //aM
+                tagImg.setAttribute('src', 'img/AF.jpg')
             } else {
-                // oM
+                tagImg.setAttribute('src', 'img/oF.jpg')
             }
         }
         divRes.innerHTML = `Foi encontrado um ${genero} de ${idade} anos`
