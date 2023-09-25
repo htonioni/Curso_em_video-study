@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada!!</h1>
+    </header>
+
+    <section class="conteudo">
+        <div>
+            <p>
+                <label for="txtn">Número: </label>
+                <input type="number" name="numero" id="txtn">
+                <input type="button" value="Gerar Tabela" onclick="tabuada()">
+            </p>
+            <p>
+                <label>
+                    <select name="tabuada" multiple size="11" id="lista">
+                        <option >Digite um numero ...:  </option>
+                    </select>
+                  </label>
+            </p>
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
