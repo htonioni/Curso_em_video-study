@@ -1,18 +1,26 @@
 function contar() {
-    let inicio = document.getElementById("inicio").value
-    let fim = document.getElementById("fim").value
+    let inicio = document.getElementById("inicio")
+    let fim = document.getElementById("fim")
     let passo = document.getElementById("passo")
-    let resultado = documet.getElementById("res")
+    let resultado = document.getElementById("res")
 
-    if (inicio == "" || fim == "" || passo.value == ""){
+    
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         alert("[ERRO] Valor inválido")
     } else {
-        if (passo.value == 0){
-            alert("[ERRO] Passo nao pode ser 0, considerando 1")
-            passo.setAttribute("value", 1)
+        resultado.innerHTML = `Contando...: `
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+        if (i < f){
+            for (let counter = i; counter <= f; counter += p){
+                resultado.innerHTML += ` ${counter} \u{1F449} `
+            }
+        } else {
+            for (let counter = i; counter >= f; counter -= p){
+                resultado.innerHTML += ` ${counter} \u{1F449} `
+            }
         }
-    }
-    for (let i = inicio; i <= fim; i++){
-
+        resultado.innerHTML += `\u{1F3C1}`
     }
 }   
