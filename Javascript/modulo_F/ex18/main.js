@@ -3,14 +3,16 @@ let result = document.getElementById('res')
 let list = document.getElementById('list')
 let array = []
 
-function addNumber(num = Number(number.value)) {
-    result.innerHTML=``
+function addNumber(num) {
+    // default value: num = Number(number.value)
+    num = Number(number.value)
+    result.innerHTML = ``
     if (num < 0 || num > 100) {
         alert('[ERROR] Number is not between 1 and 100')
     } else {
         if (num === 0){
             alert('[ERRO] Number is null')
-        } else if (array.includes(num) === true){ 
+        } else if (array.includes(num)){ 
             alert('[ERROR] Value already in the list')
         } else {
             if (array.length === 0){
