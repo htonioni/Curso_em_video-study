@@ -1,10 +1,11 @@
-let arr = [1, 2, 8, 5, 3]
+let arr = [1, 2, 2, 5]
 
-console.log(arr, "<- Non Sorted");
+
 arr.sort()
-
+let sum = 0
 for (pos in arr){
-    console.log(arr[pos]);
+    sum = sum + (arr[pos])
+    console.log(sum, "<- Total");
 }
 
 console.log("Index do 5: ",arr.indexOf(5));
