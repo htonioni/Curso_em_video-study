@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(146, 146, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 54vh;
+    width: 68vh;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 12px 14px 16px rgba(0, 0, 0, 0.533);
+    
+}
+
+#res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
