@@ -14,15 +14,20 @@
     <section class="conteudo">
         <div>   
             <p>
-
+                <label for="num">Number (between 1 and 100): </label>
+                <input type="number" name="num" id="num">
+                <input type="button" value="Add" onclick="addNumber()">
             </p>
 
             <p>
-
+                <select name="list" id="list" size="11">
+                    <option>Type a number above to start...</option>
+                </select>
+                <input type="button" value="Finalize" onclick="finalize()">
             </p>
         </div>
         <div id="res">
-
+            
         </div>
     </section>
 
