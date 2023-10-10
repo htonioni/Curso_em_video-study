@@ -21,6 +21,10 @@ body {
     
 }
 
+select#list {
+    width: 200px;
+}
+
 #res {
     display: flex;
     flex-direction: column;
